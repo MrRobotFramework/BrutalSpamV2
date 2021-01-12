@@ -283,3 +283,13 @@ if __name__=="__main__":
              balik()
      except ValueError:
              balik()
+            
+            
+def Spam():
+	os.system('clear')
+	print(C+'Subscribe Dulu Channel Saya'+W+' Bro !'+C+' :V')
+	sleep(1.5)
+	os.system('xdg-open https://www.youtube.com/c/MrRobotFramework')
+	os.system('clear')
+	sleep(1.3)
+	Banner()
