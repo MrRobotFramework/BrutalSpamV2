@@ -10,15 +10,6 @@ def balik():
     else:
        sys.exit()
 
-def Spam():
-	os.system('clear')
-	print(C+'Subscribe Dulu Channel Saya'+W+' Bro !'+C+' :V')
-	sleep(1.5)
-	os.system('xdg-open https://www.youtube.com/c/MrRobotFramework')
-	os.system('clear')
-	sleep(1.3)
-	Banner()
-
 def baner():
     print ('''
 \t
@@ -303,3 +294,27 @@ def Spam():
 	os.system('clear')
 	sleep(1.3)
 	Banner()
+	print
+	print
+	print(C+'MENU'+W+' :')
+	print(C+'\t['+W+'1'+C+']'+W+' SPAM TOKOPEDIA'+C+' ( '+H+'Aktif'+C+' )')
+	print(C+'\t['+W+'2'+C+']'+W+' SPAM RUPA-RUPA'+C+' ( '+M+'NonAktif'+C+' )')
+	print
+	
+	try:
+		
+		pilih = input(C+'PILIH MENU'+W+' \xE2\x9E\xA4 '+C+'')
+		if pilih == 1:
+			Tokped() 
+		elif pilih == 2:
+			RupaRupa()
+		else:
+			pass
+			
+	except NameError:
+		print
+		print(M+'Pilih Menu Harus Berupa Angka, Bukan Huruf !')
+		sys.exit()
+			
+if __name__ == '__main__':
+	Spam()
